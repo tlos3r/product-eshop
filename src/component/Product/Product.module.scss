@@ -1,0 +1,29 @@
+.product {
+    @apply flex relative;
+}
+.product .filter {
+    @apply w-1/5 transition-all duration-[0.3s];
+}
+.product .content {
+    @apply w-4/5 relative pl-[5px];
+}
+.product .content .icon {
+    @apply hidden justify-center items-center absolute cursor-pointer right-0 top-0;
+}
+.product .content .icon > * {
+    @apply pl-[5px];
+}
+@media screen and (max-width: 700px) {
+    .product .filter {
+        @apply w-6/12 bg-white border-blue-300 absolute left-[-200%] h-full z-[99] p-4 border-2 border-solid;
+    }
+    .product .show {
+        @apply left-0;
+    }
+    .product .content {
+        @apply w-full;
+    }
+    .product .content .icon {
+        @apply flex;
+    }
+}

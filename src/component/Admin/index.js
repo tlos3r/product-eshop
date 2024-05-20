@@ -1,0 +1,5 @@
+export { default as Home } from "./Home/Home.jsx"
+export { default as NavBar } from "./NavBar/NavBar.jsx"
+export { default as Order } from "./Orders/Order.jsx"
+export { default as AddProduct } from "./AddProducts/AddProduct.jsx"
+export { default as ViewProducts } from "./ViewProducts/ViewProducts.jsx"

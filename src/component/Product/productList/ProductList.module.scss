@@ -1,0 +1,31 @@
+.product-list {
+    @apply w-full;
+}
+.product-list .top {
+    @apply w-full flex justify-between items-center border-b-2 border-b-[#ccc] border-solid;
+}
+.product-list .top .icons {
+    @apply flex justify-center items-center;
+}
+.product-list .top .icons > * {
+    @apply cursor-pointer mr-[7px];
+}
+.product-list .top .sort label {
+    @apply text-[1.4rem] font-medium mx-[5px] my-0;
+}
+.product-list .top .sort select {
+    @apply text-[1.6rem] font-light border-[none];
+    outline: none;
+}
+.grid {
+    @apply flex justify-around flex-wrap bg-[#fffdf7];
+}
+@media screen and (max-width: 800px) {
+    .product-list .top {
+        @apply flex-col pb-[5px];
+        align-items: start;
+    }
+    .product-list .search {
+        @apply w-full;
+    }
+}

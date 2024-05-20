@@ -1,0 +1,15 @@
+.input {
+    @apply w-full h-14 p-4 bg-transparent border border-solid rounded-md border-zinc-400 focus:outline-none
+    my-3;
+}
+.select {
+    @apply w-full h-10 bg-transparent border border-solid rounded-md border-zinc-400 focus:outline-none;
+}
+label {
+    @apply font-bold text-lg;
+}
+textarea {
+    @apply block font-light p-4 w-full rounded-sm
+    bg-transparent border border-solid border-zinc-400
+    outline-none;
+}
