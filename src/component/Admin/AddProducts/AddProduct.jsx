@@ -140,7 +140,7 @@ const AddProduct = () => {
         <>
             {isLoading && <Loader />}
             <section className="flex flex-col">
-                <h2 className="text-3xl font-semibold">{detectForm(id, "Add New Product", "Edit Product")}</h2>
+                <h2 className="text-3xl font-semibold">{detectForm(id, "Thêm sản phẩm mới", "Sửa sản phẩm")}</h2>
                 <form onSubmit={detectForm(id, addProduct, editProduct)}>
                     <label htmlFor="">Tên sản phẩm: </label>
                     <input

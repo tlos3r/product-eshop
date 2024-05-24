@@ -95,7 +95,7 @@ function Cart() {
                                                     </button>
                                                 </div>
                                             </td>
-                                            <td>{(price * cartQuantity).toFixed(2)}</td>
+                                            <td>{price * cartQuantity}</td>
                                             <td className={styles.icons}>
                                                 <FaTrashAlt
                                                     size={18}
@@ -119,17 +119,16 @@ function Cart() {
                                 <div>
                                     <Link to="/#product">&larr; Tiếp tục mua hàng</Link>
                                     <br />
-                                    <div className="border shadow-md overflow-hidden rounded-md border-solid border-transparent p-4">
+                                    <div className="border shadow-md overflow-hidden rounded-md border-solid border-transparent  p-5">
                                         <p>
-                                            <b>{`Cart Item(s): ${cartTotalQuantity}`}</b>
+                                            <b>{`Số lượng : ${cartTotalQuantity}`}</b>
                                         </p>
                                         <div className={styles.text}>
-                                            <h4 className="text-md font-semibold">Tổng:</h4>
-                                            <h3>{`$${cartTotalAmount.toFixed(2)}`}</h3>
+                                            <h4 className="text-md font-semibold pr-10">Tổng:</h4>
+                                            <h3 className="font-bold">{`${cartTotalAmount} VNĐ`}</h3>
                                         </div>
-                                        <p>Tax an shipping fcalculated at checkout</p>
 
-                                        <CheckOut />
+                                        <CheckOut cartItem={cartItems} total={cartTotalAmount} />
                                     </div>
                                 </div>
                             </div>

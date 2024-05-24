@@ -26,7 +26,7 @@ const Register = () => {
                 console.log(user);
                 setIsLoading(false);
                 toast.success("Đăng ký thành công !");
-                navigate("/login");
+                navigate("/");
             })
             .catch((error) => {
                 toast.error(error.message);
