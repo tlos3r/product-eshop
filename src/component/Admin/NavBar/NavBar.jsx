@@ -14,18 +14,6 @@ const NavBar = () => {
                 <ul>
                     <li className="border border-solid border-zinc-200">
                         <NavLink
-                            to="/admin/home"
-                            className={({ isActive }) =>
-                                isActive
-                                    ? "flex text-md transition delay-150 border-r-8 border-solid border-orange-600  py-3 p-2"
-                                    : "flex text-md transition delay-150 py-3 p-2 "
-                            }
-                        >
-                            Trang chủ
-                        </NavLink>
-                    </li>
-                    <li className="border border-solid border-zinc-200">
-                        <NavLink
                             to="/admin/all-product"
                             className={({ isActive }) =>
                                 isActive
