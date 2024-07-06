@@ -30,7 +30,7 @@ const ProductItem = ({ product, grid, id, name, price, desc, imageUrl }) => {
                 </Link>
                 <div className={styles.content}>
                     <div className={styles.details}>
-                        <p>{`${price} VNĐ`}</p>
+                        <p> {new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" }).format(price)}</p>
                         <h4 className="text-md font-semibold">{shortenText(name, 18)}</h4>
                     </div>
                     {!grid && <p className={styles.desc}>{shortenText(desc, 200)}</p>}

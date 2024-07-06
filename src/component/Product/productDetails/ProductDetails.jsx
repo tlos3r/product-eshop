@@ -67,14 +67,18 @@ const ProductDetails = () => {
                                 <img src={product.imageUrl} alt={product.name} />
                             </div>
                             <div className={styles.content}>
-                                <h3 className="font-bold text-md">{product.name}</h3>
-                                <p className={styles.price}>{`$${product.price}`}</p>
-                                <p>{product.desc}</p>
+                                <h3 className="font-bold text-3xl">{product.name}</h3>
+                                <p className={styles.price}>
+                                    {new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" }).format(
+                                        product.price
+                                    )}
+                                </p>
+                                <p className="py-5">{product.desc}</p>
                                 <p>
-                                    <b>ID</b> {product.id}
+                                    <b>ID :</b> {product.id}
                                 </p>
                                 <p>
-                                    <b>Hãng</b> {product.brand}
+                                    <b>Hãng :</b> {product.brand}
                                 </p>
                                 <div className={styles.count}>
                                     {isCartAdded < 0 ? null : (
